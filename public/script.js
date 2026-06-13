@@ -347,7 +347,7 @@ function frontierIndex(p)      { return p === 1 ? 6 : 13; }
 function specialIndex(p)       { return p === 1 ? 7 : 6;  }
 
 function initGame() {
-  board=[...Array(14)].map(()=>5);
+  board=[...Array(14)].map(()=>4);
   currentPlayer=1; scores=[0,0]; lastPit=-1; gameOver=false;
   const el=document.getElementById('msg');
   el.className='msg'; el.textContent='Tour du Joueur 1';
