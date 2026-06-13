@@ -453,7 +453,7 @@ async function animateMove(b, startIdx, p) {
     tmp[cur]++;
     board = [...tmp];
     render();
-    await sleep(200);
+    await sleep(800);
   }
   return { board: tmp, last: cur };
 }
