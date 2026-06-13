@@ -543,7 +543,7 @@ function render() {
   tr.innerHTML=''; br.innerHTML=''; updateScoreDisplay();
   document.getElementById('p1row').className='player-row'+(currentPlayer===1?' active':'');
   document.getElementById('p2row').className='player-row'+(currentPlayer===2?' active':'');
-  for (let i=13;i>=7;i--) tr.appendChild(makePit(i,2));
+  for (let i=7;i>=13;i--) tr.appendChild(makePit(i,2));
   for (let i=0;i<=6;i++)  br.appendChild(makePit(i,1));
 }
 function makePit(idx,owner) {
